@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: #353336;
+  height: 100vh;
+  width: 100vh;
+}
+
+#container {
+  margin: 0;
+  background-color: #353336;
+  height: 100vh;
+  width: 100vh;
+}
+
+
+
+.open-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgba(50, 95, 50, 0.9);
+  color: #fff;
+  font-size: 5.3em;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  z-index: 1;
+
+  .play-again {
+    width: 200px;
+    height: 100px;
+    margin-top: 300px;
+    font-size: 0.5em;
+    border: 5px solid red;
+
+    &:hover {
+      background: rgb(106, 0, 255);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+.module-window {
+  display: none;
+
+}
+
+.square {
+  position: fixed;
+}
+
+.shot {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.ship {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.ship-element-0 {
+  left: 0;
+  top: 50px;
+}
+
+.ship-element-1 {
+  left: 60px;
+  top: 0;
+}
+
+.ship-element-2 {
+  left: 0;
+  top: -110px;
+}
+
+.ship-element-3 {
+  left: -60px;
+  top: -100px;
+}
+
+
+.main-alien {
+  width: 170px;
+  height: 170px;
+}
+
+.alien {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+
+.alien-element-0 {
+  left: 0;
+  top: 0;
+}
+
+.alien-element-1 {
+  left: 60px;
+  top: -50px;
+}
+
+.alien-element-2 {
+  left: 120px;
+  top: -100px;
+}
+
+.alien-element-3 {
+  left: 60px;
+  top: -90px;
+}
+
+.alien-element-4 {
+  left: 0;
+  top: -80px;
+}
+
+.alien-element-5 {
+  left: 120px;
+  top: -130px;
+}
+
+
