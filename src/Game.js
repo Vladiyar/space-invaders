@@ -56,7 +56,6 @@ export class Game {
             for (let i = this.elements.length - 1; i >= 0; i--) {
 
                 const element = this.elements[i];
-                console.log(aliens)
 
 
                 if (aliens.length === 1) {
