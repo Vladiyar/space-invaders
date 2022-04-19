@@ -32,7 +32,7 @@ export class Game {
     collision(a, b) {
         for (let i = 0; i < b.length; i++) {
             if (a.x + 50 >= b[i].offsetLeft &&
-                a.x <= b[i].offsetLeft + 100 &&
+                a.x <= b[i].offsetLeft + 150 &&
                 a.y + 50 >= b[i].offsetTop &&
                 a.y <= b[i].offsetTop + 180
             ) {
@@ -65,12 +65,12 @@ export class Game {
                 }
 
                 if (element.alien) {
-                    if (element.x === 0) {
+                    if (element.x <= 0) {
                         element.y += 200;
                         element.backing = false;
                     }
 
-                    if (element.x === screen.width - 170) {
+                    if (element.x >= screen.width - 170) {
                         element.y += 200;
                         element.backing = true;
                     }

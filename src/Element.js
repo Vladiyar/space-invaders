@@ -41,12 +41,12 @@ export class Element {
                 element.appendChild(child);
             }
 
-            element.className = 'main-alien'
+            element.className = 'main-alien';
 
         }
 
         element.classList.add(...this.classes)
-        document.body.appendChild(element);
+        document.getElementById('container').appendChild(element);
 
         return element;
     }
